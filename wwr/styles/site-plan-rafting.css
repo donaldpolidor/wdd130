@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Nanum+Gothic+Coding&family=Playfair+Display:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Nanum+Gothic+Coding&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-body {
-    font-family: 'Anta', sans-serif;
-    max-width: 960px;
-    padding: 20px;
-}
-
 :root {
     --primary-color: #008ECE;
     --secondary-color: #4E414A;
@@ -17,13 +11,21 @@ body {
     --paragraph-font: 'Roboto Mono', monospace;
     
     --nav-background-color: #4E414A;
-    --nav-link-color: #2CA03D;
-    --nav-hover-link-color: #008ECE;
-    --nav-hover-background-color: #D3B393;
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #43414a;
+    --nav-hover-background-color: #ffff;
+}
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Anta', sans-serif;
+    font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
