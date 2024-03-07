@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Nanum+Gothic+Coding&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Nanum+Gothic+Coding&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-    font-family: var(--paragraph-font);
+    font-family: 'Anta', sans-serif;
     max-width: 960px;
     padding: 20px;
 }
 
 :root {
-    --primary-color: #XXXXXX;
-    --secondary-color: #XXXXXX;
-    --accent1-color: #XXXXXX;
-    --accent2-color: #XXXXXX;
+    --primary-color: #008ECE;
+    --secondary-color: #4E414A;
+    --accent1-color: #D3B393;
+    --accent2-color: #2CA03D;
 
-    --heading-font: '______', serif;
-    --paragraph-font: '______', serif;
-
-    --nav-background-color: #XXXXXX;
-    --nav-link-color: #XXXXXX;
-    --nav-hover-link-color: #XXXXXX;
-    --nav-hover-background-color: #XXXXXX;
+    --heading-font: 'Anta', sans-serif;
+    --paragraph-font: 'Roboto Mono', monospace;
+    
+    --nav-background-color: #4E414A;
+    --nav-link-color: #2CA03D;
+    --nav-hover-link-color: #008ECE;
+    --nav-hover-background-color: #D3B393;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
+    font-family: 'Anta', sans-serif;
     color: var(--primary-color);
 }
 
@@ -32,8 +33,11 @@ header {
 }
 
 p {
+    margin: 0;
+    font-family: var(--paragraph-font);
     padding: 25px;
 }
+
 
 nav {
     background-color: var(--nav-background-color);
