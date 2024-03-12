@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Donald Polidor Practice</title>
+        <meta name="description" content="Donald Polidor BYU-Idaho , practice">
+        <meta name="author" content="Donald Polidor">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+ 
+    <body>
+        <header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="wwr/">Rafting Website</a>
+                <a href="wwr/site-plan-rafting.html">Rafting Site Plan</a>
+            </nav>
+        </header>
+        <main>
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <span class="text">Profile</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-comment"></i>
+                            </span>
+                            <span class="text">Message</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-camera"></i>
+                            </span>
+                            <span class="text">Photos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-gear"></i>
+                            </span>
+                            <span class="text">Settings</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+            <h3>Donald Polidor | Practice</h3>
+            <img src="images/profile.webp" alt="Hello!, my name is Donald Polidor" width="200">
+        </main>
+
+        <footer>
+            <p>©2024 🏝 Donald Polidor 🌎 Port-au-Prince, Haïti</p>
+        </footer>
+    </body>
+    
+</html>
