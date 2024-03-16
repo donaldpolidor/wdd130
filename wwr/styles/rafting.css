@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Nanum+Gothic+Coding&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Nanum+Gothic+Coding&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --primary-color: #008ECE;
+    --secondary-color: #4E414A;
+    --accent1-color: #D3B393;
+    --accent2-color: #2CA03D;
+
+    --heading-font: 'Anta', sans-serif;
+    --paragraph-font: 'Roboto Mono', monospace;
+    
+    --nav-background-color: #4E414A;
+    --nav-link-color: #fff;
+    --nav-hover-link-color: #43414a;
+    --nav-hover-background-color: #ffff;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    font-family: 'Anta', sans-serif;
+    width: 940px; 
+    max-width: 960px;
+    text-align: center;
+}
+
+.overlay h1{
+    margin: 0;
+}
+
+.hero {
+    position: relative;
+}
+
+.overlay-second {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    width: 800px; 
+    max-width: 800px;
+    text-align: right;
+}
+
+.overlay-second p{
+    margin-top: 20px;
+}
+
+.hero img[src*="kayak.jpg"] {
+    position: absolute;
+    float: left;
+    top: 35%; 
+    right: 2%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: auto;
+}
+
+article img[src*="kayak.jpg"] {
+    width: 200px !important;
+    height: auto !important;
+}
+
+.sociallinks img {
+    width: 45px;
+    height: auto;
+}
