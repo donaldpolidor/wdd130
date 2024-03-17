@@ -62,34 +62,35 @@ body {
 
 .overlay-second {
     position: absolute;
-    top: 56%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
     color: white;
-    font-family: 'Roboto Mono', monospace;
-    width: 800px; 
-    max-width: 800px;
-    text-align: right;
+    width: 940px; 
+    max-width: 960px;
 }
 
 .overlay-second p{
     margin-top: 20px;
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
 }
 
 .hero img[src*="kayak.jpg"] {
-    position: absolute;
-    float: left;
-    top: 35%; 
-    right: 2%;
+    float: right;
+    top: 35px; 
+    margin-right: 20px;
     transform: translateY(-50%);
     width: 200px;
     height: auto;
 }
 
-article img[src*="kayak.jpg"] {
-    width: 200px !important;
-    height: auto !important;
+
+article img {
+    width: 200px;
+    height: auto;
 }
 
 .sociallinks img {
