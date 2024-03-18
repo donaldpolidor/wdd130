@@ -40,10 +40,10 @@ body {
 
 .overlay {
     position: absolute;
-    top: 12%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.623);
     padding: 10px;
     color: white;
     font-family: 'Anta', sans-serif;
@@ -62,33 +62,29 @@ body {
 
 .overlay-second {
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px;
-    color: white;
-    width: 940px; 
-    max-width: 960px;
+    padding: 0px;
+    width: 790px; 
+    height: auto;
+    background-color: rgba(0, 38, 255, 0.5);
+
 }
 
-.overlay-second p{
-    margin-top: 20px;
+.overlay-second p {
+    margin-top: 10px;
     text-align: left;
     font-family: 'Roboto Mono', monospace;
     text-align: left;
+    margin-left: 20px;
+    color: white;
 }
 
 .hero img[src*="kayak.jpg"] {
     float: right;
-    top: 35px; 
-    margin-right: 20px;
-    transform: translateY(-50%);
-    width: 200px;
-    height: auto;
-}
-
-
-article img {
+    margin-top: 16px; 
+    margin-right: 16px;
     width: 200px;
     height: auto;
 }
