@@ -14,6 +14,7 @@
     --nav-link-color: #fff;
     --nav-hover-link-color: #43414a;
     --nav-hover-background-color: #ffff;
+}
 
 body {
     font-family: var(--paragraph-font);
