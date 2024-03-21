@@ -4,8 +4,8 @@
 :root {
     --primary-color: #008ECE;
     --secondary-color: #4E414A;
-    --accent1-color: #D3B393;
-    --accent2-color: #2CA03D;
+    --accent1-color: #fd7f00;
+    --accent2-color: #5e2ca079;
 
     --heading-font: 'Anta', sans-serif;
     --paragraph-font: 'Roboto Mono', monospace;
@@ -14,7 +14,6 @@
     --nav-link-color: #fff;
     --nav-hover-link-color: #43414a;
     --nav-hover-background-color: #ffff;
-}
 
 body {
     font-family: var(--paragraph-font);

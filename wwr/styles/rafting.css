@@ -4,8 +4,8 @@
 :root {
     --primary-color: #008ECE;
     --secondary-color: #4E414A;
-    --accent1-color: #D3B393;
-    --accent2-color: #2CA03D;
+    --accent1-color: #fd7f00;
+    --accent2-color: #5e2ca079;
 
     --heading-font: 'Anta', sans-serif;
     --paragraph-font: 'Roboto Mono', monospace;
@@ -16,13 +16,46 @@
     --nav-hover-background-color: #ffff;
 }
 
-header nav a{
+.logo img{
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+header{
+    margin: 0.5rem auto;
+    display: grid;
+    grid-template-columns: 300px 1fr 2fr;
+    align-items: center;
+    background-color: #001aff7a; 
+    max-width: 960px;
+}
+
+.navigate{
+    display: flex;
+    list-style: none;
+}
+
+.navigate li{
+    flex: 1 1 100%;
+}
+
+.navigate a{
+    display: block;
+    color: #000000;
+    padding: 35px;
     text-decoration: none;
+}
+
+.navigate a:hover{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
 }
 
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
 body {
@@ -43,7 +76,7 @@ body {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 38, 255, 0.5);
     padding: 10px;
     color: white;
     font-family: 'Anta', sans-serif;
@@ -69,7 +102,6 @@ body {
     width: 790px; 
     height: auto;
     background-color: rgba(0, 38, 255, 0.5);
-
 }
 
 .overlay-second p {
@@ -90,6 +122,66 @@ body {
 }
 
 .sociallinks img {
-    width: 45px;
+    width: 25px;
     height: auto;
+    position: relative;
+    left: 80%;
+}
+
+.overlay-3 {
+    position: relative;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    width: 960px; 
+    height: 270px;
+    background-color: rgba(0, 38, 255, 0.219);
+}
+
+.overlay-3 p{
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.adventure{
+    justify-content: center;
+    top: 50px;
+    display: flex;
+   flex-wrap: nowrap;
+   overflow: auto;
+   text-align: center;
+   flex-direction: column;
+}
+
+.images-container{
+    display: flex;
+    justify-content: center;
+}
+
+figure{
+    border: thin #008ECE solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 170px;
+    margin: 5px;
+}
+
+.adventure img{
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption{
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.footer p{
+    text-align: center;
 }
