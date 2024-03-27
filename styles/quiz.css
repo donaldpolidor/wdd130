@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1{
+    margin: 0.1rem;
+    color: #df0000;
+    text-align: center;
+}
+
+legend{
+    padding: 0.5rem;
+    text-align: center;
+    color: #df0000;
+    font-size: 1.2em;
+}
+
+body{
+    font-family: Ubuntu, cursive;
+    font-size: 1em;
+    color: #df0000;
+    background: #cc28281e;
+}
+
+form{
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #df0000;
+    border-radius: 0.2rem;
+    background-color: #ffe600;
+    display: grid;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: 0.8rem;
+    margin: 1rem;
+    border: 2px solid #df0000;
+    padding: 2rem;
+}
+
+label{
+    text-align: left;
+    padding-right: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.form-item1, .form-item2{
+    text-align: center;
+    margin: 0.5rem;
+}
+
+
+input, select, textarea{
+    color: #2813e0;
+    padding: 0.1rem;
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+input#fullname {
+    width: 55%;
+}
+
+.Convert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Convert label {
+    margin-right: 10px; 
+    background-color: #ccc;
+    width: 200px;
+    height: 29px;
+    text-align: center;
+    padding: 6px;
+}
+
+button{
+    margin: 1rem;
+    background-color: rgb(228, 4, 4);
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    padding: .60rem;
+    font-size: 1.2rem;
+    width: 200px;
+    position: relative;
+    margin-left: 200px;
+}
+
+button:hover{
+    background-color: rgb(0, 110, 255);
+}
+
+footer{
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #242323;
+    border-top: 1px solid #ccc;
+}
