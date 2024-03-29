@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WDD 130 | Quiz Form</title>
-    <link rel="stylesheet" type="text/css" href="styles/quiz.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <meta name="description" content="The contact us page of the Rafting site, allows the user to contact us and to have access to the different programs available on the site.">
+    <meta name="author" content="Donald Polidor">
+    <link rel="stylesheet" type="text/css" href="styles/quiz.css"> 
 </head>
+
 <body>
 <header>
     <h1>QUIZ HTML</h1>
@@ -27,20 +29,20 @@
         <fieldset>
             <legend>Answer the following questions</legend>
             <div>
-                <label for="question1">1. What is your profession?:</label>
-                <input type="text" id="question1" name="question1">
+                <label for="q1">1. What is your profession?:</label>
+                <input type="text" id="q1" name="q1">
             </div>
-            <label for="experience">2. What was your first job like?</label>
-            <textarea id="experience" name="experience" rows="7"></textarea>
+            <label for="q2">2. What was your first job like?</label>
+            <textarea id="q2" name="q2" rows="7"></textarea>
             <div>
-                <label for="question2">3. What's your favorite animal?:</label>
-                <input type="text" id="question2" name="question2">
+                <label for="q3">3. What's your favorite animal?:</label>
+                <input type="text" id="q3" name="q3">
             </div>
-            <label for="explanation">4. Tell us a little about this animal.</label>
-            <textarea id="explanation" name="explanation" rows="8"></textarea>
+            <label for="q4">4. Tell us a little about this animal.</label>
+            <textarea id="q4" name="q4" rows="8"></textarea>
             <div>
-                <label for="choice">5. Which of these countries would you like to visit?</label>
-                <select id="choice" name="choice">
+                <label for="q5">5. Which of these countries would you like to visit?</label>
+                <select id="q5" name="q5">
                     <option value="A">Brazil</option>
                     <option value="B">Canada</option>
                     <option value="C">Russia</option>
@@ -50,10 +52,10 @@
                     <option value="G">Uruguay</option>
                 </select>
             </div>
-            <label for="question5">5. Convert this Roman numeral into a number.</label>
+            <label for="q6">5. Convert this Roman numeral into a number.</label>
             <div class="Convert">
-                <label for="question5">XXV</label>
-                <input type="number" id="question5" name="question5">
+                <p>XXV</p>
+                <input type="number" id="q6" name="q6">
             </div>
         </fieldset>
         <button type="submit">Submit Quiz</button>
