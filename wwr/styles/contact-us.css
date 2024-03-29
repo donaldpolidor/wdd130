@@ -186,15 +186,41 @@ legend{
 
 .form-item2{
     display: flex;
-    text-align: center;
+    text-align: left;
+    margin: auto;
+    grid-gap: 0.1rem;
+    background-color: #008dce4b;
+}
+
+.form-item3{
+    display: flex;
+    align-items: center;
     margin: 0.1rem;
     font-size: medium;
-    grid-gap: 1rem;
+    padding: 5px;
 }
+
+.form-item3 input[type="checkbox"] {
+    margin-right: 0;
+}
+
+.form-item3 label {
+    margin: 0;
+}
+
 .h3{
     text-align: center;
     color: #008ECE;
 }
+
+fieldset{
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid #008ECE;
+    padding: 1rem;
+}
+
 
 .lien p{
     text-align: right;
