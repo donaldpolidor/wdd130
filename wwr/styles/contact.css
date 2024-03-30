@@ -227,15 +227,20 @@ fieldset{
     margin: 0.1rem;
 }
 
-.footer p{
-    text-align: center;
+footer{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color:var(--secondary-color);
 }
 
 .sociallinks img {
     width: 25px;
     height: auto;
-    position: relative;
-    left: 80%;
 }
 
 button{
