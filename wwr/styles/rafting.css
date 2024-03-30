@@ -108,6 +108,7 @@ body {
     color: white;
     width: 100%;
     margin: 0;
+    border-radius: 10px;
     letter-spacing: 5px;
 }
 
@@ -128,6 +129,7 @@ body {
     left: 30px;
     right: 50px;
     background-color: rgba(0, 38, 255, 0.5);
+    margin-left: 20px;
 }
 
 .overlay-second p {
@@ -183,7 +185,7 @@ figcaption {
 }
 
 p {
-    justify-content: center;
+    text-align: justify;
     color: #000000;
     word-wrap: break-word;
     margin-left: 50px;
@@ -222,7 +224,7 @@ form {
     display: flex;
     text-align: left;
     grid-gap: 0.1rem;
-    background-color: #008dce4b;
+    background-color: #8d00ce4b;
     margin: 0 0 1rem;
 }
 
