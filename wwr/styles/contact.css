@@ -31,23 +31,19 @@ header{
     max-width: 960px;
 }
 
-.navigate{
+nav{
     display: flex;
     list-style: none;
 }
 
-.navigate li{
-    flex: 1 1 100%;
-}
-
-.navigate a{
+nav a{
     display: block;
     color: #000000;
     padding: 35px;
     text-decoration: none;
 }
 
-.navigate a:hover{
+.nav a:hover{
     color: rgb(255, 255, 255);
     font-weight: 700;
 }
@@ -67,8 +63,8 @@ body {
 
 .overlay {
     position: absolute;
-    top: 32%;
-    left: 50%;
+    top: 100px;
+    left: 100px;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 38, 255, 0.5);
     padding: 10px;
