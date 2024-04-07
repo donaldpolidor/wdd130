@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Nanum+Gothic+Coding&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    --primary-color: #008ECE;
-    --secondary-color: #4E414A;
-    --accent1-color: #fd7f00;
+    --primary-color: #17028a;
+    --secondary-color: #990404;
+    --accent1-color: #10a502;
     --accent2-color: #5e2ca0;
 
     --heading-font: 'Anta', sans-serif;
@@ -15,8 +15,14 @@
     --nav-hover-background-color: #ffff;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 .logo img {
@@ -28,16 +34,18 @@
 header,
 main,
 footer {
-
     max-width: 960px;
     margin: 0 auto;
 }
-
+main {
+    display: grid;
+    grid-template-columns: auto;
+}
 header {
     display: grid;
     grid-template-columns: 300px 1fr 2fr;
     align-items: center;
-    background-color: #001aff7a;
+    background-color: var(--primary-color);
 }
 
 nav {
@@ -47,7 +55,7 @@ nav {
 
 nav a {
     display: block;
-    color: #000000;
+    color: #ffffff;
     padding: 35px;
     text-decoration: none;
 }
@@ -96,24 +104,23 @@ body {
     top: 25px;
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 38, 255, 0.5);
+    background-color: rgba(207, 0, 0, 0.5);
     padding: 10px;
     color: white;
 }
 
 .page-heading {
     text-align: center;
-    background-color: var(--accent2-color);
-    padding: 10px;
+    background-color: var(--secondary-color);
+    padding: 5px;
     color: white;
     width: 100%;
     margin: 0;
-    border-radius: 10px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .mg-top {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .overlay h1 {
@@ -128,7 +135,7 @@ body {
     top: 150px;
     left: 30px;
     right: 50px;
-    background-color: rgba(0, 38, 255, 0.5);
+    background-color: rgba(207, 0, 0, 0.555);
     margin-left: 20px;
 }
 
@@ -141,11 +148,6 @@ body {
     color: white;
 }
 
-.information1 {
-    margin-left: 45px;
-    color: #008ECE;
-}
-
 .adventure {
     justify-content: center;
     display: flex;
@@ -153,7 +155,7 @@ body {
     overflow: auto;
     text-align: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .images-container {
@@ -177,11 +179,12 @@ figure {
 }
 
 figcaption {
-    color: #008ECE;
+    color: #000000;
     font: bold smaller sans-serif;
     margin-top: 5px;
     padding: 6px;
     text-align: center;
+    font-size: 18px;
 }
 
 p {
@@ -196,7 +199,7 @@ form {
     width: 610px;
     margin: 10px auto;
     padding: 1rem;
-    border: 1px solid #008ECE;
+    border: 1px solid #17028a;
     border-radius: 0.5rem;
     background-color: #bebcb773;
     display: grid;
@@ -211,9 +214,11 @@ form {
 
 .general-input label {
     text-align: right;
+    color: #17028a;
 }
 
 .check-input {
+    color: #17028a;
     display: grid;
     grid-template-columns: 50px auto;
     gap: 0 1rem;
@@ -221,29 +226,25 @@ form {
 }
 
 .contact-radio {
+    color: #17028a;
     display: flex;
     text-align: left;
     grid-gap: 0.1rem;
-    background-color: #8d00ce4b;
+    background-color: #8600004b;
+    padding: 10px;
     margin: 0 0 1rem;
 }
 
 legend {
+    color: #17028a;
     padding: 0.5rem;
     text-align: center;
-    color: #000000;
     font-size: 1.2em;
-}
-
-
-.h3 {
-    text-align: center;
-    color: #008ECE;
 }
 
 fieldset {
     margin: 1rem;
-    border: 1px solid #008ECE;
+    border: 1px solid #17028a;
     padding: 1rem;
 }
 
@@ -257,7 +258,7 @@ footer {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr;
     align-items: center;
-    background-color: #3e3e3e;
+    background-color: #6d6d6d;
     color: #fff;
 }
 
@@ -303,7 +304,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(0, 110, 255);
+    background-color: #10a502;
 }
 
 .gmap {
@@ -315,4 +316,254 @@ button:hover {
     grid-template-columns: 3fr 2fr;
     gap: 0 30px;
     margin: 30px 0;
+}
+
+.contact-details p {
+    color: #17028a;
+}
+
+/*-----------------------------CSS of page trips-----------------------------*/
+
+.page-title {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    padding: 10px;
+    color: var(--nav-link-color);
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+
+.trips {
+    position: relative;
+}
+
+.trips img {
+    width: 100%;
+}
+
+.trips article img {
+    float: right;
+    width: 200px;
+}
+
+.button {
+    margin: 15px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.book-now button {
+    margin: 0;
+    background-color: rgb(228, 4, 4);
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    width: 500px;
+    position: relative;
+    margin-left: 11px;
+    text-decoration: none;
+}
+
+.book-now button:hover {
+    background-color: rgb(41, 170, 1);
+}
+
+.title-container h3 {
+    color: var(--primary-color);
+    margin: 0;
+    text-align: center;
+}
+
+.images-container2 {
+    display: grid;
+    grid-template-columns: 300px auto;
+    gap: 1em 2em;
+    margin: 1em 0;
+}
+
+.images-container2 img {
+    grid-column: 1;
+   grid-row: 1/5;
+   width: 100%;
+}
+
+.images-container2 h3 {
+   grid-column: 2;
+   grid-row: 1;
+}
+
+.images-container2 p {
+   grid-column: 2;
+   grid-row: 2/5;
+   padding: 0;
+   margin: 0;
+}
+
+.title-table {
+    color: #ff0000;
+    margin: 0;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+   margin: 0 auto 20px auto;
+}
+
+thead th {
+    padding: 5px;
+    font-style: italic;
+    background-color: #5e2ca0;
+    color: #fff;
+    font-weight: bold;
+}
+td {
+    padding: .5em 1em;
+}
+tbody {
+    padding: 5px;
+    color: #000000;
+    font-weight: bold;
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: #e6e4e481;
+}
+
+/*------------------------CSS to home page-------------------------*/
+
+.home {
+    position: relative;
+    text-align: center;
+}
+
+.page-title-home {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    padding: 7px;
+    color: var(--nav-link-color);
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.registration {
+    position: absolute;
+    width: 600px;
+    top: 150px;
+    left: 165px;
+    background-color: #5e2ca0a8;
+    border: 0;
+    border-radius: 15px;
+}
+
+.general-input-home {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0.7rem;
+    margin: 0 0 1rem;
+    margin-left: 45px;
+}
+
+.general-input-home input {
+    margin-top: 10px;
+    width: 20rem;
+    padding: 0.3em;
+}
+
+.general-input-home label {
+    margin-top: 10px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.gender-home legend {
+    color: #ffffff;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.gender-home {
+    margin: 1rem;
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 320px;
+    justify-self: center;
+}
+
+.home-radio {
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    grid-gap: 0.5rem;
+    background-color: #ffffff60;
+    padding: 5px;
+    border-radius: 25px;
+    width: 280px;
+    margin-top: 0.1rem;
+}
+
+.signup {
+    justify-self: center;
+    margin: 0;
+    background-color: rgb(201, 3, 3);
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    width: 320px;
+    text-align: center;
+    padding: .5em 0;
+    text-decoration: none;
+}
+
+.signup:hover {
+    background-color: rgb(41, 170, 1);
+}
+
+.images-container3 {
+    display: flex;
+    justify-content: center;
+}
+
+.title-container3 h2 {
+    color: #990404;
+    text-align: center;
+    margin-top: 30px;
+}
+
+figure-container3 {
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    max-width: 400px;
+    margin: 40px;
+    height: 500px;
+    background-color: #990404;
+    margin-top: 5px;
+}
+
+figure-container3 p {
+    margin: 0;
+    color: #fff;
+}
+
+figcaption-container3 {
+    color: #990404;
+    font: bold smaller sans-serif;
+    margin-top: 5px;
+    padding: 6px;
+    text-align: center;
+    font-size: 22px;
+    background-color: #fff;
 }
