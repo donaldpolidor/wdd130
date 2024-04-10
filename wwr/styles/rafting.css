@@ -176,7 +176,7 @@ figure {
     margin: 5px;
 }
 
-figure p{
+figcaption p{
     text-align: center;
     color: #e40101;
     margin: 0;
@@ -188,17 +188,10 @@ figure p{
     border-radius: 10%;
 }
 
-figcaption {
-    color: #000000;
-    font: bold smaller sans-serif;
-    margin-top: 5px;
-    padding: 6px;
-    text-align: center;
-    font-size: 18px;
-}
+
 
 p {
-    text-justify: left;
+    text-align: justify;
     color: #000000;
     word-wrap: break-word;
 }
