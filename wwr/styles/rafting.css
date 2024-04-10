@@ -117,6 +117,7 @@ body {
     width: 100%;
     margin: 0;
     letter-spacing: 3px;
+    margin-bottom: 15px;
 }
 
 .mg-top {
@@ -141,7 +142,6 @@ body {
 
 .overlay-second p {
     margin-top: 10px;
-    text-align: left;
     font-family: 'Roboto Mono', monospace;
     text-align: left;
     margin-left: 20px;
@@ -155,7 +155,11 @@ body {
     overflow: auto;
     text-align: center;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top:30px;
+}
+
+.contact p{
+    text-align: justify;
 }
 
 .images-container {
@@ -194,11 +198,9 @@ figcaption {
 }
 
 p {
-    text-align: justify;
+    text-justify: left;
     color: #000000;
     word-wrap: break-word;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 form {
@@ -270,6 +272,7 @@ footer {
 
 footer p {
     color: #fff;
+    margin-left: 60px;
 }
 
 footer a {
@@ -407,12 +410,15 @@ button:hover {
    grid-row: 2/5;
    padding: 0;
    margin: 0;
+   text-align: justify;
 }
 
 .title-table {
     color: #ff0000;
     margin: 0;
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 table {
@@ -553,7 +559,6 @@ figure-container3 {
     padding: 10px;
     max-width: 400px;
     margin: 40px;
-    height: 500px;
     background-color: #990404;
     margin-top: 5px;
 }
@@ -561,6 +566,8 @@ figure-container3 {
 figure-container3 p {
     margin: 0;
     color: #fff;
+    padding: 0.3rem;
+    text-align: justify;
 }
 
 figcaption-container3 {
